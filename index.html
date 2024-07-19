@@ -11,14 +11,14 @@
 
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-<!-- <link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet" href="style.css">
 
 <!-- Compiled and minified JavaScript -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <body>
-  <img src="images/pizza one.png" alt="Pizza">
+ 
   <main class="container" style="background-color: palegoldenrod" x-data="{ 
     showCart: false,
     spizzaTotal : 0,
@@ -95,11 +95,11 @@
    },
    }">
     <section>
-      <div class="card">
+      <div class="card" style="background-color: palegoldenrod;">
 
 
         <div class="row text-align center">
-          <h3>SHOPPING CART</h3>
+          <h3>ONLINE SHOPPING CART</h3>
 
           <div>
             <button x-show="!showCart" x-on:click="showCart=true" class="waves-effect waves-light btn">View
@@ -207,46 +207,50 @@
           <!-- LARGE PIZZA LOOPING -->
 
 
-          <div class="col m12 l4 s12" style="text-align: center; background-color: brown">
-            {{#each pizzas.Large}}
+          <div class="col m12 l4 s12" style="text-align: center; background-color: #F6511D">
+           
             <div class="col m12 l12 s12">
-              <img src="{{photo}}" width="60%" height="20%" />
+              <img src="pizza.png" width="80%" height="20%" />
+              <h2>Large Pizza</h2>
+              <h2>R120.00</h2>
             </div>
             <br /><br />
-            <div class="col m12 l12 s12">{{size}} Pizza</div>
-            <div class="col m12 l12 s12">R{{price}}</div>
-            <div class="col m12 l12 s12">{{type}}</div>
-            <div class="col m12 l12 s12">{{flavour}}</div>
+            <div class="col m12 l12 s12"></div>
+            <div class="col m12 l12 s12"></div>
+            <div class="col m12 l12 s12"></div>
+            <div class="col m12 l12 s12"></div>
             <div class="col m12 l12 s12">
               <button x-on:click="buyLpizza" class="waves-effect waves-light btn">order now</button>
               <br />
               <br />
               <hr />
             </div>
-            {{/each}}
+            
           </div>
 
 
 
           <!-- SMALL PIZZA LOOPING SECTION -->
 
-          <div class="col s12 m12 l4" style="text-align: center; background-color: aqua">
-            {{#each pizzas.Small}}
+          <div class="col s12 m12 l4" style="text-align: center; background-color: #00A6ED">
+         
             <div class="col m12 l12 s12">
-              <img src="{{photo}}" width="60%" height="20%" />
+              <img src="pizza.png" width="60%" height="20%" />
+              <h3>Medium Pizza</h3>
+              <h3>R89.00 </h3>
             </div>
             <br /><br />
-            <div class="col m12 l12 s12">{{size}} Pizza</div>
-            <div class="col m12 l12 s12">R{{price}}</div>
-            <div class="col m12 l12 s12">{{type}}</div>
-            <div class="col m12 l12 s12">{{flavour}}</div>
+            <div class="col m12 l12 s12"> </div>
+            <div class="col m12 l12 s12"></div>
+            <div class="col m12 l12 s12"></div>
+            <div class="col m12 l12 s12"></div>
             <div class="col m12 l12 s12">
               <button x-on:click="buySpizza" class="waves-effect waves-light btn">order now</button>
               <br />
               <br />
               <hr />
             </div>
-            {{/each}}
+            
           </div>
 
 
@@ -255,23 +259,25 @@
           <!-- MEDIUM PIZZA LOOPING -->
 
 
-          <div class="col m12 l4 s12" style="text-align: center; background-color: blue">
-            {{#each pizzas.Medium}}
+          <div class="col m12 l4 s12" style="text-align: center; background-color: #ECA72C">
+            
             <div class="col m12 l12 s12">
-              <img src="{{photo}}" width="60%" height="20%" />
+              <img src="pizza.png" width="40%" height="20%" />
+              <h3>Small Pizza</h3>
+              <h3>R60.00</h3>
             </div>
             <br /><br />
-            <div class="col m12 l12 s12">{{size}} Pizza</div>
-            <div class="col m12 l12 s12">R{{price}}</div>
-            <div class="col m12 l12 s12">{{type}}</div>
-            <div class="col m12 l12 s12">{{flavour}}</div>
+            <div class="col m12 l12 s12"></div>
+            <div class="col m12 l12 s12"></div>
+            <div class="col m12 l12 s12"></div>
+            <div class="col m12 l12 s12"></div>
             <div class="col m12 l12 s12">
               <button x-on:click="buyMpizza" class="waves-effect waves-light btn">order now</button>
               <br />
               <br />
               <hr />
             </div>
-            {{/each}}
+            
           </div>
         </div>
       </div>

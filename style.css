@@ -3,6 +3,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
+
 }
 
 .pizza {
@@ -13,7 +14,8 @@ margin: 1em;
 /* margin-left: 0em; */
 margin-bottom: 0.5em;
 border-radius: 1em;
-
+display: flex;
+flex: 1;
  /* use display: inline-block */
 /* width: 20em;  
 display: inline-block;
@@ -22,12 +24,14 @@ min-height: 30em;  */
 }
 
 .medium_pizza {
-  background-color: #06d6a0;
+ 
+  background-color: #FFB400;
    flex: 1
 }
 
 .Large_pizza { 
-  background-color: #BA5A31;
+ 
+  background-color: #FFB400;
     flex: 1
 }
 
@@ -68,13 +72,25 @@ min-height: 30em;  */
 
 @media (min-width: 960px) {
 /* apply this css if the page is wider than 960px */
- /* body{
-    background-color:  #fff; */
-  
-    .pizzas {
-  display: flex;
+  body{
+    .pizza {
+  display: inline-block;
+  flex: 1;
 }
+
+    }
+    
+    .pizza {
+      display: inline-block;
+      flex: 1;
+    }
+    
 } 
+
+.pizza {
+  display: inline-block;
+  flex: 1;
+}
 
 
 
